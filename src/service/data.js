@@ -2,7 +2,7 @@ export const data = [
   {
     id: 1,
     name: "Cappuccino",
-    type: "Bebida",
+    type: "bebida",
     size: "200ml",
     price: 12,
     image:
@@ -15,7 +15,7 @@ export const data = [
   {
     id: 2,
     name: "Match Milk Tea",
-    type: "Bebida",
+    type: "bebida",
     size: "400ml",
     price: 35,
     image:
@@ -27,7 +27,7 @@ export const data = [
   {
     id: 3,
     name: "Latte",
-    type: "Bebidas",
+    type: "bebida",
     size: "200ml",
     price: 10,
     image:
@@ -39,7 +39,7 @@ export const data = [
   {
     id: 4,
     name: "Iced Caramel",
-    type: "Bebida",
+    type: "bebida",
     size: "300ml",
     price: 25,
     image:
@@ -51,7 +51,7 @@ export const data = [
   {
     id: 5,
     name: "Espresso",
-    type: "Bebida",
+    type: "bebida",
     size: "60ml",
     price: 8,
     image:
@@ -63,7 +63,7 @@ export const data = [
   {
     id: 6,
     name: "Café Coado",
-    type: "Bebida",
+    type: "bebida",
     size: "100ml",
     price: 5,
     image:
@@ -75,7 +75,7 @@ export const data = [
   {
     id: 7,
     name: "Americano",
-    type: "Bebida",
+    type: "bebida",
     size: "300ml",
     price: 14,
     image:
@@ -87,7 +87,7 @@ export const data = [
   {
     id: 8,
     name: "Suco de Laranja",
-    type: "Bebida",
+    type: "bebida",
     size: "500ml",
     price: 15,
     image:
@@ -99,7 +99,7 @@ export const data = [
   {
     id: 9,
     name: "Suco de Maracujá",
-    type: "Bebida",
+    type: "bebida",
     size: "500ml",
     price: 15,
     image:
@@ -111,7 +111,7 @@ export const data = [
   {
     id: 10,
     name: "Suco de Abacaxi com Hortelã",
-    type: "Bebida",
+    type: "bebida",
     size: "500ml",
     price: 15,
     image:
@@ -123,7 +123,7 @@ export const data = [
   {
     id: 11,
     name: "Coxinha de Morango",
-    type: "Doce",
+    type: "doce",
     size: "100g",
     price: 7,
     image:
@@ -135,7 +135,7 @@ export const data = [
   {
     id: 12,
     name: "Casadinho de Goiabada",
-    type: "Doce",
+    type: "doce",
     size: "40g",
     price: 4,
     image:
@@ -147,7 +147,7 @@ export const data = [
   {
     id: 13,
     name: "Pão de Mel com Doce de Leite",
-    type: "Doce",
+    type: "doce",
     size: "170g",
     price: 7,
     image:
@@ -159,7 +159,7 @@ export const data = [
   {
     id: 14,
     name: "Bolo de Ninho e Nutella",
-    type: "Doce",
+    type: "doce",
     size: "300g",
     price: 15,
     image:
@@ -171,7 +171,7 @@ export const data = [
   {
     id: 15,
     name: "Supresa de Uva",
-    type: "Doce",
+    type: "doce",
     size: "200g",
     price: 9,
     image:
@@ -183,7 +183,7 @@ export const data = [
   {
     id: 16,
     name: "Brigadeiros sortidos",
-    type: "Doce",
+    type: "doce",
     size: "4uni",
     price: 10,
     image:
@@ -195,7 +195,7 @@ export const data = [
   {
     id: 17,
     name: "Cookie Classic",
-    type: "Doce",
+    type: "doce",
     size: "80g",
     price: 6,
     image:
@@ -207,7 +207,7 @@ export const data = [
   {
     id: 18,
     name: "Brownie",
-    type: "Doce",
+    type: "doce",
     size: "200g",
     price: 12,
     image:
@@ -219,7 +219,7 @@ export const data = [
   {
     id: 19,
     name: "Bookie",
-    type: "Doce",
+    type: "doce",
     size: "200g",
     price: 12,
     image:
@@ -232,7 +232,7 @@ export const data = [
   {
     id: 20,
     name: "Red Velvet Brownie",
-    type: "Doce",
+    type: "doce",
     size: "200g",
     price: 15,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__G9RRYA2wxwf2lwTbYG659ICHoHmbIYLqw&s",
@@ -244,7 +244,7 @@ export const data = [
   {
     id: 21,
     name: "Mini Bolo de Chocolate",
-    type: "Doce",
+    type: "doce",
     size: "300g",
     price: 10,
     image:
@@ -256,7 +256,7 @@ export const data = [
   {
     id: 22,
     name: "Mini Bolo de Limão",
-    type: "Doce",
+    type: "doce",
     size: "300g",
     price: 10,
     image:
@@ -268,7 +268,7 @@ export const data = [
   {
     id: 23,
     name: "Mini Bolo de Cenoura",
-    type: "Doce",
+    type: "doce",
     size: "300g",
     price: 10,
     image:
@@ -280,7 +280,7 @@ export const data = [
   {
     id: 24,
     name: "Palha Italiana",
-    type: "Doce",
+    type: "doce",
     size: "200g",
     price: 7,
     image:
@@ -292,7 +292,7 @@ export const data = [
   {
     id: 25,
     name: "Empada de Frango",
-    type: "Salgado",
+    type: "salgado",
     size: "300g",
     price: 8,
     image:
@@ -304,7 +304,7 @@ export const data = [
   {
     id: 26,
     name: "Coxinha de Frango com Catupiry",
-    type: "Salgado",
+    type: "salgado",
     size: "200g",
     price: 8,
     image:
@@ -316,7 +316,7 @@ export const data = [
   {
     id: 27,
     name: "Americano de Presunto e Queijo",
-    type: "Salgado",
+    type: "salgado",
     size: "350g",
     price: 9,
     image:
@@ -328,7 +328,7 @@ export const data = [
   {
     id: 28,
     name: "Risole de Milho",
-    type: "Salgado",
+    type: "salgado",
     size: "300g",
     price: 8,
     image:
@@ -340,7 +340,7 @@ export const data = [
   {
     id: 29,
     name: "Bola de Queijo",
-    type: "Salgado",
+    type: "salgado",
     size: "70g",
     price: 3.5,
     image:
@@ -352,7 +352,7 @@ export const data = [
   {
     id: 30,
     name: "Tapioca de Carne Seca",
-    type: "Salgado",
+    type: "salgado",
     size: "500g",
     price: 15,
     image:
@@ -364,7 +364,7 @@ export const data = [
   {
     id: 31,
     name: "Tapioca de Presunto e Queijo",
-    type: "Salgado",
+    type: "salgado",
     size: "500g",
     price: 15,
     image:
@@ -376,7 +376,7 @@ export const data = [
   {
     id: 32,
     name: "Tapioca de Frango",
-    type: "Salgado",
+    type: "salgado",
     size: "500g",
     price: 15,
     image:

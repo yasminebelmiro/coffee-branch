@@ -1,15 +1,14 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const CategoryContainer = styled.section`
   width: 100%;
   display: flex;
-
-  display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-export const Card = styled.a`
+export const Card = styled(Link)`
   width: 34%;
   position: relative;
   display: flex;

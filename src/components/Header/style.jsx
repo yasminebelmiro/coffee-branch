@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.nav`
@@ -16,7 +17,9 @@ export const Items = styled.ul`
   justify-content: space-evenly;
 `;
 
-export const Item = styled.a``;
+export const Item = styled(Link)`
+color: #000;
+text-decoration: none;`;
 
 export const Icon = styled.div`
   font-size: 1.7rem;

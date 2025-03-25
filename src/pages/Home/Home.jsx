@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-import { HomeContainer } from "./style";
+import { HomeContainer, Separator, SeparatorTitle, Grid } from "./style";
 import Hero from "../../components/Hero/Hero";
-import Category from "../../components/Category/Category";
-
 import { data } from "../../service/data";
-import ProductList from "../../components/ProductList/ProductList";
 import Header from "../../components/Header/Header";
+import CategoryCard from "../../components/CategoryCard/CategoryCard";
+import Card from "../../components/Card/Card";
 
 const Home = () => {
   const [drinks, setDrinks] = useState([]);
@@ -14,19 +13,70 @@ const Home = () => {
   const [salty, setSalty] = useState([]);
 
   useEffect(() => {
-    setSweet(data.filter((item) => item.type == "Bebida"));
-    setSalty(data.filter((item) => item.type == "Doce"));
-    setDrinks(data.filter((item) => item.type == "Salgado"));
+    setSweet(data.filter((item) => item.type == "bebida"));
+    setSalty(data.filter((item) => item.type == "doce"));
+    setDrinks(data.filter((item) => item.type == "salgado"));
   }, []);
 
   return (
     <HomeContainer>
-      <Header/>
+      <Header />
       <Hero />
-      <Category />
-      <ProductList product={drinks} title="Bebidas" />
-      <ProductList product={sweet} title="Doces" />
-      <ProductList product={salty} title="Salgados" />
+      <CategoryCard />
+      <Separator>
+        <SeparatorTitle>Bebidas</SeparatorTitle>
+      </Separator>
+      <Grid>
+        {drinks.map((item) => (
+          <Card
+            key={item.id}
+            id={item.id}
+            name={item.name}
+            type={item.type}
+            size={item.size}
+            price={item.price}
+            image={item.image}
+            ingredients={item.ingredients}
+            description={item.description}
+          />
+        ))}
+      </Grid>
+      <Separator>
+        <SeparatorTitle>Doces</SeparatorTitle>
+      </Separator>
+      <Grid>
+        {sweet.map((item) => (
+          <Card
+            key={item.id}
+            id={item.id}
+            name={item.name}
+            type={item.type}
+            size={item.size}
+            price={item.price}
+            image={item.image}
+            ingredients={item.ingredients}
+            description={item.description}
+          />
+        ))}
+      </Grid>
+      <Separator>
+        <SeparatorTitle>Salgados</SeparatorTitle>
+      </Separator>
+      <Grid>
+        {salty.map((item) => (
+          <Card
+            key={item.id}
+            id={item.id}
+            name={item.name}
+            type={item.type}
+            size={item.size}
+            price={item.price}
+            image={item.image}
+            ingredients={item.ingredients}
+            description={item.description}
+          />
+        ))}
+      </Grid>
     </HomeContainer>
   );
 };
