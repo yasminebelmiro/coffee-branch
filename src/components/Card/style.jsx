@@ -15,11 +15,11 @@ export const CardContainer = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 120px;
   justify-content: space-between;
 `;
 
 export const Row = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -39,7 +39,7 @@ export const Description = styled.p`
 export const IconContainer = styled.div`
   width: 2rem;
   height: 2rem;
-  background: #614209;
+  background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,17 +80,18 @@ export const ProductImage = styled.img`
   justify-content: center;
 `;
 
-export const PriceContainer = styled.div`
+export const Bottom = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 3rem;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.44);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 `;
 
 export const ProductPrice = styled.p`
@@ -138,7 +139,7 @@ export const ProductImageModal = styled.img`
   width: 100%;
   height: 350px;
   object-fit: cover;
-    border-radius: 10px;
+  border-radius: 10px;
 `;
 
 export const BuyButton = styled.button`

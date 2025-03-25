@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Search from "./pages/Search/Search";
 import Category from "./pages/Category/Category";
+import Auth from "./pages/Auth/Auth";
 
 
 const product = {
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<Search />} />
         <Route path="/categoria/:categoryName" element={<Category />} />
+        <Route path="/login" element={<Auth />} />
       </Routes>
     </BrowserRouter>
   );

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import {
   CardContainer,
   Description,
-  PriceContainer,
+  Bottom,
   Column,
   ProductImage,
   ProductName,
@@ -22,6 +22,7 @@ import {
 } from "./style";
 import { TbShoppingCartPlus } from "react-icons/tb";
 import { IoMdCloseCircle } from "react-icons/io";
+import { Link } from "react-router-dom";
 const Card = ({
   id,
   name,
@@ -36,9 +37,9 @@ const Card = ({
 
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden"; 
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; 
+      document.body.style.overflow = "auto";
     }
 
     return () => {
@@ -51,19 +52,18 @@ const Card = ({
         <Row>
           <Column>
             <ProductName>{name}</ProductName>
-            <Row style={{ padding: "0" }}>
-              <Description>{type}</Description>
-              <Description>{size}</Description>
-            </Row>
+            <Description>{type}</Description>
+            <Description>{size}</Description>
           </Column>
-          <IconContainer>
-            <Icon as={TbShoppingCartPlus} />
-          </IconContainer>
+          <ProductPrice>R${price.toFixed(2)}</ProductPrice>
         </Row>
+
         <ImageContainer>
-          <PriceContainer>
-            <ProductPrice>R${price.toFixed(2)}</ProductPrice>
-          </PriceContainer>
+          <Bottom>
+            <IconContainer>
+              <Icon as={TbShoppingCartPlus} />
+            </IconContainer>
+          </Bottom>
           <ProductImage src={image} alt={name} />
         </ImageContainer>
       </CardContainer>
@@ -81,10 +81,9 @@ const Card = ({
               <Description>{type}</Description>
               <Description>{size}</Description>
             </Row>
-            
-            
+
             <ProductImageModal src={image} alt={name} />
-            
+
             <DescriptionModal>{description}</DescriptionModal>
             <DescriptionModal>
               <strong>Ingrediente: </strong>

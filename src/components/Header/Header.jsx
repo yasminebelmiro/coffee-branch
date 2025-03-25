@@ -15,8 +15,8 @@ const Header = () => {
       <Items>
         <Item to="/search">
           <Icon as={FiSearch} />
-        </Item>
-        <Item>
+        </Item >
+        <Item to="/login" >
           <Icon as={LuUserRound} />
         </Item>
         <Item>

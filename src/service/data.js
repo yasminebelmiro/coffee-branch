@@ -303,7 +303,7 @@ export const data = [
   },
   {
     id: 26,
-    name: "Coxinha de Frango com Catupiry",
+    name: "Coxinha de Frango c/ Catupiry",
     type: "salgado",
     size: "200g",
     price: 8,
@@ -315,7 +315,7 @@ export const data = [
   },
   {
     id: 27,
-    name: "Americano de Presunto e Queijo",
+    name: "Americano Presunto e Queijo",
     type: "salgado",
     size: "350g",
     price: 9,
@@ -351,7 +351,7 @@ export const data = [
   },
   {
     id: 30,
-    name: "Tapioca de Carne Seca",
+    name: "Tapioca Carne Seca",
     type: "salgado",
     size: "500g",
     price: 15,
@@ -363,7 +363,7 @@ export const data = [
   },
   {
     id: 31,
-    name: "Tapioca de Presunto e Queijo",
+    name: "Tapioca Presunto e Queijo",
     type: "salgado",
     size: "500g",
     price: 15,
@@ -375,7 +375,7 @@ export const data = [
   },
   {
     id: 32,
-    name: "Tapioca de Frango",
+    name: "Tapioca Frango",
     type: "salgado",
     size: "500g",
     price: 15,
