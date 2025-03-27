@@ -6,7 +6,6 @@ export const AuthContent = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000;
 `;
 
 export const AuthContainer = styled.div`
@@ -14,6 +13,7 @@ export const AuthContainer = styled.div`
   height: 85%;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #fff;
@@ -22,7 +22,6 @@ export const AuthContainer = styled.div`
 
 export const Row = styled.section`
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -55,11 +54,10 @@ export const LoginContainer = styled.section`
 export const Title = styled.h1`
   font-family: "Major Mono Display", monospace;
   font-size: 1.5rem;
-
 `;
 
 export const GoogleButton = styled.button`
-  width: 100%;
+  width: 50%;
   margin: 1rem 0;
   height: 40px;
   font-family: "Barlow Condensed", sans-serif;
@@ -71,7 +69,7 @@ export const GoogleButton = styled.button`
   background: #614209;
   color: #fff;
   border-radius: 40px;
-  cursor:pointer;
+  cursor: pointer;
 `;
 
 export const Icon = styled.div`
@@ -90,7 +88,7 @@ export const Form = styled.form`
   align-items: center;
   justify-content: center;
   margin: 1rem 0;
-  gap: 10px;
+  gap: 4px;
 `;
 
 export const Input = styled.input`
@@ -114,8 +112,9 @@ export const Button = styled.button`
   color: #fff;
   font-size: 1.2rem;
   border-radius: 40px;
-    cursor:pointer;
+  cursor: pointer;
 `;
 
 export const ErrorMessage = styled.p`
-color: red;`
+  color: red;
+`;

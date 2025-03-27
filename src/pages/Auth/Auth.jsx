@@ -1,28 +1,32 @@
-import React from "react";
-import { FcGoogle } from "react-icons/fc";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
+import { FcGoogle } from "react-icons/fc";
+import * as yup from "yup";
 import {
-  AuthContent,
   AuthContainer,
+  AuthContent,
   Button,
+  ErrorMessage,
   Form,
   GoogleButton,
+  Icon,
   Input,
+  Line,
   LoginContainer,
   RegisterContianer,
   Row,
   Text,
   Title,
-  Icon,
-  Line,
-  ErrorMessage,
 } from "./style";
 
 import Header from "../../components/Header/Header";
+import { AuthGoogleContext } from "../../context/authGoogle";
+import { Navigate } from "react-router-dom";
 
 const Auth = () => {
+  const { signInGoogle, signed } = useContext(AuthGoogleContext);
+
   const schemaRegister = yup.object().shape({
     name: yup.string().required("Este é um campo obrigatório!"),
     email: yup.string().required("Este é um campo obrigatório!"),
@@ -43,8 +47,6 @@ const Auth = () => {
       .min(6, "A senha deve ter pelo menos 6 caracteres!")
       .required("Este é um campo obrigatório!"),
   });
-
-
 
   const {
     register: registerRegister,
@@ -74,11 +76,6 @@ const Auth = () => {
           <Row>
             <RegisterContianer>
               <Title>Cadastrar</Title>
-              <GoogleButton>
-                Cadastrar com&nbsp;
-                <Icon as={FcGoogle} />
-              </GoogleButton>
-              <Text>ou</Text>
               <Form onSubmit={handleSubmitRegister(onSubmitRegister)}>
                 <Input
                   {...registerRegister("name")}
@@ -107,18 +104,15 @@ const Auth = () => {
                   name="confirm_password"
                   placeholder="Confirmar senha"
                 />
-                <ErrorMessage>{errorsRegister.confirm_password?.message}</ErrorMessage>
+                <ErrorMessage>
+                  {errorsRegister.confirm_password?.message}
+                </ErrorMessage>
                 <Button type="submit">Cadastrar</Button>
               </Form>
             </RegisterContianer>
             <Line></Line>
             <LoginContainer>
               <Title>Login</Title>
-              <GoogleButton>
-                Entrar com&nbsp;
-                <Icon as={FcGoogle} />
-              </GoogleButton>
-              <Text>ou</Text>
               <Form onSubmit={handleSubmitLogin(onSubmitLogin)}>
                 <Input
                   {...registerLogin("email")}
@@ -138,10 +132,14 @@ const Auth = () => {
               </Form>
             </LoginContainer>
           </Row>
+          <Text>ou</Text>
+          <GoogleButton onClick={() => signInGoogle()}>
+            Entrar com&nbsp;
+            <Icon as={FcGoogle} />
+          </GoogleButton>
         </AuthContainer>
       </AuthContent>
     </>
   );
 };
-
 export default Auth;
